@@ -1,6 +1,6 @@
 # *SwiftCameraLoadingOverlay*
 
-**SwiftCameraLoadingOverlay** is a prototype of loading overlay. The lens animates triggering a blend of different colors.  Created using Paint Code 3. 
+**SwiftCameraLoadingOverlay** is a prototype of a camera as a  loading overlay. The lens animates triggering a blend of different colors.  Created using Paint Code 3. 
 
 
 ## Video
