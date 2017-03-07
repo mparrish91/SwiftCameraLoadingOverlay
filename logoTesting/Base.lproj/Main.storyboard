@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="logoTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHo-FX-1r4" customClass="Camera" customModule="logoTesting" customModuleProvider="target">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eM7-KR-XVC" customClass="CameraLens" customModule="logoTesting" customModuleProvider="target">
+                                        <rect key="frame" x="74.5" y="15.5" width="81" height="81"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="OFv-Rv-jgH"/>
+                                            <constraint firstAttribute="width" constant="81" id="zQ5-TV-RPz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eM7-KR-XVC" firstAttribute="centerX" secondItem="nHo-FX-1r4" secondAttribute="centerX" constant="-5" id="7Ms-OQ-b5b"/>
+                                    <constraint firstAttribute="height" constant="128" id="HRG-1a-AQQ"/>
+                                    <constraint firstItem="eM7-KR-XVC" firstAttribute="centerY" secondItem="nHo-FX-1r4" secondAttribute="centerY" constant="-8" id="IIY-ni-LiA"/>
+                                    <constraint firstAttribute="width" constant="240" id="X0P-wx-Ccx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nHo-FX-1r4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4uH-Sh-kUc"/>
+                            <constraint firstItem="nHo-FX-1r4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="huh-PZ-p3n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camera" destination="nHo-FX-1r4" id="CVY-38-Jpp"/>
+                        <outlet property="cameraLens" destination="eM7-KR-XVC" id="Gzl-yx-UKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
